@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "509581457094",
+    "project_id": "labyrinth3d-244c7",
+    "storage_bucket": "labyrinth3d-244c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509581457094:android:e0717d8c0adaf1322989c7",
+        "android_client_info": {
+          "package_name": "com.northcapuniversity.labyrinth3d"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509581457094-ijnhi4l7ap5lk1ib8tldt3fju5bql7rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEhNwwBGj_zY-Ykq-5DyuTIl0XshUskgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509581457094-ijnhi4l7ap5lk1ib8tldt3fju5bql7rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
