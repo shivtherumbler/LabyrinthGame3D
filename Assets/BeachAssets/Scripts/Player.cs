@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
 
         }
 
-        if(collision.gameObject.tag == "Treasure")
+        /*if(collision.gameObject.tag == "Treasure")
         {
             if(keycollected == 3)
             {
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
                 keycollected = 0;
                 Invoke("NextLevel", 3);
             }
-        }
+        }*/
     }
 
     private void OnCollisionExit(Collision collision)
@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Bomb")
+        /*if (other.tag == "Bomb")
         {
             other.gameObject.GetComponent<Animator>().SetTrigger("attack01");
         }
@@ -86,9 +86,9 @@ public class Player : MonoBehaviour
         {
             keycollected++;
             Destroy(other.gameObject);
-        }
+        }*/
 
-        
+
     }
 
     public void PausePlay()
@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Water")
+        /*if (other.tag == "Water")
         {
             isGrounded = false;
             rb.isKinematic = true;
@@ -152,16 +152,16 @@ public class Player : MonoBehaviour
             transform.localScale -= Vector3.one * (Time.deltaTime * 2);
             Invoke("Retry", 2);
             //}
-        }
-    }
-        /*private void OnCollisionEnter(Collision collision)
-        {
-            if(collision.gameObject.tag == "Obstacle")
-            {
-                Handheld.Vibrate();
-            }
         }*/
-    
+    }
+    /*private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            Handheld.Vibrate();
+        }
+    }*/
+
     public void Open(GameObject open)
     {
         open.SetActive(true);
@@ -174,7 +174,7 @@ public class Player : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("BeachLevel");
         Time.timeScale = 1;
     }
 
